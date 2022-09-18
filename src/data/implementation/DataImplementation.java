@@ -10,8 +10,6 @@ public class DataImplementation implements DataInterface {
     ArrayList<AssosiacoesModel> dados = new ArrayList<>();
 
 
-
-
     @Override
     public void save(AssosiacoesModel assosiacoesModel){
         dados.add(assosiacoesModel);
@@ -26,7 +24,7 @@ public class DataImplementation implements DataInterface {
     @Override
     public void delete(int cnpj) {
         for(AssosiacoesModel assosiacoesModel : dados){
-            if (assosiacoesModel.getCnpj()== cnpj){
+            if (assosiacoesModel.getCnpj() == cnpj){
                 dados.remove(assosiacoesModel);
             }
         }
@@ -34,7 +32,14 @@ public class DataImplementation implements DataInterface {
     }
 
     @Override
-    public void update() {
+    public void update(int cnpj,AssosiacoesModel associacaoModelNovo) {
+        int index = 0;
+        for(AssosiacoesModel assosiacoesModel : dados){
+            if (assosiacoesModel.getCnpj() == cnpj){
+                dados.set(index,associacaoModelNovo);
+            }
+            index++;
+        }
 
     }
     //metodos que irão retornar listas, usarei como banco de dados simples
