@@ -1,6 +1,7 @@
 package models;
 
-public class Colaborador {
+public abstract class Colaborador { //classe abstrata
+
     private String nome;
     private int salario;
     private int cpf;

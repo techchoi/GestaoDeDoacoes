@@ -1,4 +1,4 @@
 package models;
 
-public class Presidente extends Colaborador{
+public class Presidente extends Colaborador {
 }
