@@ -17,7 +17,6 @@ public class DataImplementation implements DataInterface {
     @Override
     public ArrayList<AssosiacoesModel> getAll() {
         return dados;
-
     }
 
     @Override

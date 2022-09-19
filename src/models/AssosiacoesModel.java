@@ -74,4 +74,18 @@ public class AssosiacoesModel {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
+    @Override
+    public String toString() {
+        return "AssosiacoesModel{" +
+                "cnpj=" + cnpj +
+                ", razaoSocial='" + razaoSocial + '\'' +
+                ", presidente='" + presidente + '\'' +
+                ", vicePresidente='" + vicePresidente + '\'' +
+                ", secretario='" + secretario + '\'' +
+                ", colaborador=" + colaborador +
+                ", parceiros='" + parceiros + '\'' +
+                ", endereco=" + endereco +
+                '}';
+    }
 }

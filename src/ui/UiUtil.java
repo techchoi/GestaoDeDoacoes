@@ -1,6 +1,8 @@
 package ui;
 
 
+import models.AssosiacoesModel;
+import service.AssociacaoService;
 
 public class UiUtil {
 
@@ -128,6 +130,12 @@ public class UiUtil {
 
     }
 
+    public void cadastrarAssociacao(){
+        System.out.println("Menu de cadastro de Associação");
+    }
+    public void listarAssociacao(){
+        System.out.println("Menu de listagem de Associações");
+    }
 
 
     public void clear(){

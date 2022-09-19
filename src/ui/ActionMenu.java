@@ -1,8 +1,13 @@
 package ui;
 
+import data.implementation.DataImplementation;
+import service.AssociacaoService;
+
 import java.util.Scanner;
 
 public class ActionMenu extends UiUtil {
+    DataImplementation dataImplementation = new DataImplementation();
+    AssociacaoService associacaoService = new AssociacaoService();
     public void lerMenuPrincipal(){
         menuInicial();
         Scanner ler = new Scanner(System.in);
@@ -44,10 +49,16 @@ public class ActionMenu extends UiUtil {
 
         switch (option){
             case 1:
-                System.out.println("case 1");
+                listarAssociacao();
+                associacaoService.listar();
+                menuAssociacao();
+                lerMenuAssociacao();
                 break;
             case 2:
-                System.out.println("case 2");
+                cadastrarAssociacao();
+                associacaoService.pegaInformacoesESalva();
+                menuAssociacao();
+                lerMenuAssociacao();
                 break;
             case 3:
                 System.out.println("case 3");
