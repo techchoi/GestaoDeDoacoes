@@ -9,7 +9,6 @@ public class DataImplementation implements DataInterface {
 
     ArrayList<AssosiacoesModel> dados = new ArrayList<>();
 
-
     @Override
     public void save(AssosiacoesModel assosiacoesModel){
         dados.add(assosiacoesModel);
