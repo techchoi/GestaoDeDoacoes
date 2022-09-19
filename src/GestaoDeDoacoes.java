@@ -1,10 +1,11 @@
-import ui.UiUtilsIntarfaceImpl;
+import ui.ActionMenu;
+import ui.UiUtil;
 
 public class GestaoDeDoacoes {
     public static void main(String[] args) {
-        UiUtilsIntarfaceImpl uiUtilsIntarface = new UiUtilsIntarfaceImpl();
-        uiUtilsIntarface.home();
-        uiUtilsIntarface.menuInicial();
+        ActionMenu actionMenu = new ActionMenu();
+        actionMenu.home();
+        actionMenu.menuInicial();
        // uiUtilsIntarface.clear();
     }
 }

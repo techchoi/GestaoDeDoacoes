@@ -2,7 +2,7 @@ package ui;
 
 
 
-public class UiUtilsIntarfaceImpl {
+public class UiUtil {
 
     public void home() {
         System.out.println("");
